@@ -1,0 +1,42 @@
+;**************************************************
+:*
+;*   inf-файл для работы с шлюзом USB-LBUS
+;*     как с COM-портом.
+;*
+;*   Работает со стандартным CDC-драйвером
+;*     начиная с Windows XP SP3.
+;*
+;**************************************************
+
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%Qinf lab%
+DriverVer=08/12/2015,1.0.0.0
+
+[MANUFACTURER]
+%Qinf lab%=DeviceList, NTx86, NTamd64
+
+[DeviceList.NTx86]
+%USB_LBUS%=DriverInstall,USB\VID_ffff&PID_0006
+
+[DeviceList.NTamd64]
+%USB_LBUS%=DriverInstall,USB\VID_ffff&PID_0006
+
+[DriverInstall]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=LowerFilterAddReg,SerialPropPageAddReg
+
+[DriverInstall.Services]
+include = mdmcpq.inf
+AddService = usbser, 0x00000002, LowerFilter_Service_Inst
+
+[SerialPropPageAddReg]
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Strings]
+ProviderName = "CDC Driver"
+USB_LBUS = "Qinf laboratories USB-LBUS gateway"
+
