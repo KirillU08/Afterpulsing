@@ -17,7 +17,7 @@
 			</Item>
 			<Item Name="Action-Status.mnu" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Action-Status/Action-Status.mnu"/>
 			<Item Name="Enable Counter.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Action-Status/Enable Counter.vi"/>
-			<Item Name="Enable Output.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Action-Status/Enable Output.vi"/>
+			<Item Name="Enable Output.vi" Type="VI" URL="../Public/Action-Status/Enable Output.vi"/>
 		</Item>
 		<Item Name="Configure" Type="Folder">
 			<Item Name="Low Level" Type="Folder">
@@ -74,7 +74,7 @@
 			<Item Name="Configure Waveform Characteristics(Phase).vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Configure/Configure Waveform Characteristics(Phase).vi"/>
 			<Item Name="Configure Waveform Characteristics(Shape).vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Configure/Configure Waveform Characteristics(Shape).vi"/>
 			<Item Name="Configure Waveform Copy.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Configure/Configure Waveform Copy.vi"/>
-			<Item Name="Create Arbitrary Waveform.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Configure/Create Arbitrary Waveform.vi"/>
+			<Item Name="Create Arbitrary Waveform.vi" Type="VI" URL="../Public/Configure/Create Arbitrary Waveform.vi"/>
 			<Item Name="Edit Arbitrary Waveform.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DG4000 Series/Public/Configure/Edit Arbitrary Waveform.vi"/>
 		</Item>
 		<Item Name="Data" Type="Folder">
