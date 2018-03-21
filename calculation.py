@@ -2,7 +2,7 @@ import string
 a=0
 list=[]
 form=""
-with open("C:/1/1.txt") as file:
+with open("1.txt") as file:
     for row in file.readlines():
         if(a==0):
             form=row
@@ -21,7 +21,7 @@ with open("C:/1/1.txt") as file:
             str='\t'.join(arr)
             list.append(str)
         a=a+1
-with open("C:/1/2.txt", "w") as filew:
+with open("result.txt", "w") as filew:
     filew.write("%s" % form)
     for item in list:
         filew.write("%s\n" % item)
